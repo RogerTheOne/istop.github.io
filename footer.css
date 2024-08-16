@@ -97,64 +97,33 @@ footer a:hover {
     color:#FAB37A;
 }
 
-@media screen and (min-width: 900px) {
-    .healthcare-grid {
-        display:inline-flex;
-        gap: 40px;
-        margin-left:11%;
-        margin-right:11%;
-    }
 
-    .grid-item {
-        text-align:left;
-    }
-
-    .left-column {
-        width:50%;
-    }
-
-    .right-column {
-        width:50%;
-    }
-
+@media only screen and (max-width: 768px) {
     footer {
-        display:flex;
-        gap: 8em;
-        text-align:left;
-        padding: 80px 5% 30px 6%;
-    }
-
-    footer ul {
-        display:inline;
-    }
-
-    footer li {
-        margin:10px 0 0 0;
-    }
-
-    .footer-column-1 {
-        width:15%;
-        margin-right:2em;
-        align-items:center;
-        text-align:center;
+        flex-direction: column;
+        padding: 20px 5% 20px 5%;
     }
 
     .footer-column-1 img {
-        width:100%;
-        margin-bottom:1em;
-        margin-top: -1.75em;
+        width: 80%; 
+        padding-top: 0;
     }
 
-    .footer-column-1 p {
-        margin-bottom: 0;
+    .footer-column-1, 
+    .footer-column-2, 
+    .footer-column-3, 
+    .footer-column-4 {
+        flex: none;
+        margin-bottom: 20px;
+        text-align: center;
     }
 
-    .parent-site {
-        margin-top:70px;
+    footer ul {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .social-media {
-        justify-content:left;
-        margin-top:55px;
+    footer li {
+        margin: 10px 0;
     }
 }
